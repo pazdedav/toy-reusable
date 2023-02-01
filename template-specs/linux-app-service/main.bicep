@@ -16,7 +16,7 @@ param linuxFxVersion string = 'DOTNETCORE|3.0'
 
 var appServicePlanName = 'AppServicePlan-${appServiceAppName}'
 
-// This template spec is an example only.
+// Warning: This template spec is an example only.
 // It follows some, but not all, of the guidance described at https://docs.microsoft.com/azure/app-service/security-recommendations
 
 resource appServicePlan 'Microsoft.Web/serverfarms@2021-02-01' = {
@@ -24,7 +24,7 @@ resource appServicePlan 'Microsoft.Web/serverfarms@2021-02-01' = {
   location: location
   sku: {
     name: skuName
-    capacity: skuCapacity    
+    capacity: skuCapacity
   }
   kind: 'linux'
   properties: {
